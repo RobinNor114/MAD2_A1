@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -57,8 +58,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rK-Bu-dlL">
-                                <rect key="frame" x="3" y="365" width="412" height="20.5"/>
+                                <rect key="frame" x="3" y="360" width="412" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Planner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzj-vS-a3O">
+                                <rect key="frame" x="20" y="47" width="384" height="58"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -66,18 +73,23 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="nzj-vS-a3O" firstAttribute="trailing" secondItem="E7Z-eu-554" secondAttribute="trailing" id="3FQ-ju-hbK"/>
+                            <constraint firstItem="E7Z-eu-554" firstAttribute="top" secondItem="nzj-vS-a3O" secondAttribute="bottom" constant="67" id="9vK-BQ-DaX"/>
                             <constraint firstItem="E7Z-eu-554" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DIv-tH-NBt"/>
                             <constraint firstItem="E7Z-eu-554" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Dgs-ZA-GF3"/>
                             <constraint firstItem="6rK-Bu-dlL" firstAttribute="top" secondItem="E7Z-eu-554" secondAttribute="bottom" constant="13" id="GGB-5R-sqI"/>
                             <constraint firstItem="6rK-Bu-dlL" firstAttribute="top" secondItem="E7Z-eu-554" secondAttribute="bottom" constant="8" symbolic="YES" id="RSZ-Vl-ID1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6rK-Bu-dlL" secondAttribute="trailing" constant="-1" id="S0n-zi-wn0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E7Z-eu-554" secondAttribute="trailing" constant="20" id="TU4-Av-yJk"/>
+                            <constraint firstItem="nzj-vS-a3O" firstAttribute="top" secondItem="9Da-YC-NVR" secondAttribute="topMargin" constant="-57" id="grj-57-v1n"/>
                             <constraint firstItem="E7Z-eu-554" firstAttribute="top" secondItem="9Da-YC-NVR" secondAttribute="bottom" constant="20" id="huo-Cl-lno"/>
+                            <constraint firstItem="nzj-vS-a3O" firstAttribute="top" secondItem="9Da-YC-NVR" secondAttribute="top" constant="-49" id="kD9-Bf-tUt"/>
                             <constraint firstItem="6rK-Bu-dlL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="3" id="mse-Tb-ihN"/>
+                            <constraint firstItem="nzj-vS-a3O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="47" id="o1b-cz-nO6"/>
                             <constraint firstItem="9Da-YC-NVR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="osx-bm-0Oj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E7Z-eu-554" secondAttribute="trailing" constant="10" id="pEf-LS-3LY"/>
-                            <constraint firstItem="9Da-YC-NVR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rrS-aG-fJ1"/>
                             <constraint firstAttribute="trailing" secondItem="9Da-YC-NVR" secondAttribute="trailing" id="vLe-w0-sS4"/>
+                            <constraint firstItem="nzj-vS-a3O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="viy-7p-Ehr"/>
                         </constraints>
                     </view>
 <<<<<<< HEAD
@@ -98,7 +110,7 @@
             <objects>
                 <viewController id="3Bn-MK-7e0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gVr-vE-qDJ" customClass="PlanningView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="t5a-C7-dYH">
@@ -240,10 +252,13 @@
             <point key="canvasLocation" x="-675" y="-1284"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="SBL-nc-sYj"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="calendar.badge.plus" catalog="system" width="128" height="108"/>
+        <image name="calendar.badge.plus" catalog="system" width="128" height="109"/>
         <image name="pencil.and.list.clipboard" catalog="system" width="114" height="128"/>
-        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
