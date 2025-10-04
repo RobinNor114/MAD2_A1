@@ -54,7 +54,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3Bn-MK-7e0" kind="show" id="29t-rx-5Ua"/>
+                                    <segue destination="3Bn-MK-7e0" kind="show" id="yza-MA-fB6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rK-Bu-dlL">
@@ -88,7 +88,7 @@
         <!--Planning View-->
         <scene sceneID="b6s-gX-nJ6">
             <objects>
-                <viewController id="3Bn-MK-7e0" customClass="PlanningView" customModule="A1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3Bn-MK-7e0" customClass="PlannerView" customModule="A1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gVr-vE-qDJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,9 +157,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WqY-af-wo0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <connections>
-                            <outlet property="daysPicker" destination="Cj1-sD-p7T" id="mBW-Mr-GGY"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="qCY-4U-HLu"/>
                 </viewController>
