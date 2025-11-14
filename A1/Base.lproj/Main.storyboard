@@ -122,10 +122,10 @@
             </objects>
             <point key="canvasLocation" x="108.69565217391305" y="-478.125"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="yB1-Ha-Z4Y">
             <objects>
-                <viewController id="9gZ-nK-Gw9" sceneMemberID="viewController">
+                <viewController id="9gZ-nK-Gw9" customClass="ProfileViewController" customModule="A1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IuA-dc-ira">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,6 +232,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ERN-eO-S4h"/>
+                    <connections>
+                        <outlet property="profileImageView" destination="4HI-FF-uJh" id="baa-4A-NlL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zNI-5v-ODO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
