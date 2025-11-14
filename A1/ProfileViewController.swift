@@ -36,8 +36,4 @@ class ProfileViewController: UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
-
-    @IBAction func saveTapped(_ sender: UIButton) {
-        print("Saved profile: \(nameTextField.text ?? "")")
-    }
 }
